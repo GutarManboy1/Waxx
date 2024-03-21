@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+@import 'navbar';
+@import 'footer';
+@import 'bootstrap_buttons';
