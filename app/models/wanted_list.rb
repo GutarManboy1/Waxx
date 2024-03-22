@@ -1,0 +1,2 @@
+class WantedList < ApplicationRecord
+end
