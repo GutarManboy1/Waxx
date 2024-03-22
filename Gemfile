@@ -5,6 +5,9 @@ ruby "3.1.2"
 #bootstrap
 gem 'bootstrap', '~> 5.2.3'
 
+#fontawesome
+gem "font-awesome-sass", "~> 5.2.0"
+
 #simpleform
 gem "simple_form"
 
