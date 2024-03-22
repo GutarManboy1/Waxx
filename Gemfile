@@ -5,6 +5,12 @@ ruby "3.1.2"
 #bootstrap
 gem 'bootstrap', '~> 5.2.3'
 
+#simpleform
+gem "simple_form"
+
+#prefixer
+gem "autoprefixer-rails"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 
