@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get '/', to: 'pages#home'
   get 'main', to: 'pages#main'
   get 'profile', to: 'pages#profile'
+  get 'records/:id', to: 'records#show', as: :record
+  delete 'records/:id', to: 'records#destroy'
 end
