@@ -5,6 +5,9 @@ ruby "3.1.2"
 #bootstrap
 gem 'bootstrap', '~> 5.2.3'
 
+#faker
+gem 'faker'
+
 #fontawesome
 gem "font-awesome-sass", "~> 5"
 
