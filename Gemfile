@@ -6,7 +6,10 @@ ruby "3.1.2"
 gem 'bootstrap', '~> 5.2.3'
 
 #fontawesome
-gem "font-awesome-sass", "~> 5.2.0"
+gem "font-awesome-sass", "~> 5"
+
+#sass
+gem 'sass', '~> 3.7', '>= 3.7.4'
 
 #simpleform
 gem "simple_form"
@@ -51,7 +54,7 @@ gem "redis", ">= 4.0.1"
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem "bootsnap", require: true
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
