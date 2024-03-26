@@ -24,7 +24,9 @@ end
   Shop.create!(
     name: generate_unique_shop_name,
     address: Faker::Address.street_address,
-    city: Faker::Address.city
+    city: Faker::Address.city,
+    latitude: Faker::Address.latitude,
+    longitude: Faker::Address.longitude
   )
 end
 puts "Finished!"
