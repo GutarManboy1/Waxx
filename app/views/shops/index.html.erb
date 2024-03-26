@@ -1,12 +1,21 @@
 <h1> here are your shops</h1>
 
-<% @shops.each do |shop|%>
+
+<div class="main-container">
+<div class="cards">
+  <% @shops.each do |shop|%>
   <%= shop.name %>
   <%= shop.address %>
   <%= shop.city %>
   <%= shop.image %>
 <%end %>
-
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= shop.name%>');" data-shop-id="<%= shop.id %>">
-  <h1><%= shop.name %></h1>
 </div>
+
+
+<img id="map" src='https://api.mapbox.com/[...]?access_token=pk.eyJ1IjoiZ3V0YXJtYW5ib3kxIiwiYSI6ImNsczhkY3IwNzI0YmYycHAwbjZnZWhjbngifQ.od3pzVBrIvn4_h4M4IN7XQ'>
+
+</div>
+<%#
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= shop.name%>');" data-shop-id="<%= shop.id %>">
+  <%# <h1><%= shop.name</h1>
+</div> %>
