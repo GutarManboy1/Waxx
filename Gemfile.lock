@@ -105,6 +105,7 @@ GEM
     debug (1.9.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    dotenv (2.8.1)
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.12.0)
@@ -114,11 +115,12 @@ GEM
     ffi (1.16.3)
     font-awesome-sass (5.2.0)
       sassc (>= 1.11)
+    geocoder (1.8.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-    importmap-rails (2.0.1)
+    importmap-rails (1.2.3)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
@@ -173,6 +175,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.10)
+    rack-proxy (0.7.7)
+      rack
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -242,6 +246,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic_range (3.0.0)
     simple_form (5.3.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -275,6 +280,11 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webpacker (5.4.4)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     webrick (1.8.1)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -298,10 +308,12 @@ DEPENDENCIES
   bootstrap (~> 5.2.3)
   capybara
   debug
+  dotenv (~> 2.7, >= 2.7.6)
   error_highlight (>= 0.4.0)
   faker
   font-awesome-sass (~> 5)
-  importmap-rails
+  geocoder
+  importmap-rails (~> 1.2.3)
   jbuilder
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.2)
@@ -315,6 +327,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
+  webpacker (~> 5.x)
 
 RUBY VERSION
    ruby 3.1.2p20

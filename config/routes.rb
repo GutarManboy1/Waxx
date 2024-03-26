@@ -12,6 +12,5 @@ Rails.application.routes.draw do
   get 'profile', to: 'pages#profile'
   get 'records/:id', to: 'records#show', as: :record
   delete 'records/:id', to: 'records#destroy'
-  get 'shops/:id', to: 'shops#index', as: :shop
   delete 'shops/:id', to: 'shops#destroy'
 end

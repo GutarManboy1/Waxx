@@ -5,11 +5,20 @@ ruby "3.1.2"
 #bootstrap
 gem 'bootstrap', '~> 5.2.3'
 
+#DOTENV
+gem 'dotenv', '~> 2.7', '>= 2.7.6'
+
 #faker
 gem 'faker'
 
 #fontawesome
 gem "font-awesome-sass", "~> 5"
+
+#geocoding
+gem "geocoder"
+
+#maps
+gem "importmap-rails", "~> 1.2.3"
 
 #sass
 gem 'sass', '~> 3.7', '>= 3.7.4'
@@ -19,6 +28,9 @@ gem "simple_form"
 
 #prefixer
 gem "autoprefixer-rails"
+
+#webpacker
+gem 'webpacker', '~> 5.x'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
@@ -33,7 +45,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", ">= 5.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+#gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
