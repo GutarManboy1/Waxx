@@ -1,4 +1,6 @@
 .navbar-lewagon {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   background: white;
 }
@@ -9,4 +11,8 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navcontainer h3{
+  font-family: "Sixtyfour", sans-serif;
 }
